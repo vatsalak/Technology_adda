@@ -1,0 +1,188 @@
+{
+  "quizzes": [
+    {
+      "date": "2025-09-08",
+      "question": "Which ministry governs CMTI?",
+      "options": [
+        { "text": "Ministry of Electronics & IT", "correct": false },
+        { "text": "Ministry of Heavy Industries", "correct": true }
+      ]
+    },
+    {
+      "date": "2025-09-09",
+      "question": "CMTI’s research on Vision AI is primarily applied in?",
+      "options": [
+        { "text": "Automated inspection and quality control", "correct": true },
+        { "text": "Movie animation", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-10",
+      "question": "CMTI develops sensor-based systems mainly to?",
+      "options": [
+        { "text": "Monitor and optimize manufacturing processes", "correct": true },
+        { "text": "Enhance social media analytics", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-11",
+      "question": "Which advanced area is a strong focus at CMTI?",
+      "options": [
+        { "text": "Robotics & Automation", "correct": true },
+        { "text": "Hospitality Management", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-12",
+      "question": "CMTI’s AI-enabled metrology systems are used for?",
+      "options": [
+        { "text": "Precision measurement of machine components", "correct": true },
+        { "text": "Tracking social media likes", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-13",
+      "question": "When was CMTI established?",
+      "options": [
+        { "text": "1962", "correct": true },
+        { "text": "1972", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-14",
+      "question": "CMTI’s vision-based inspection systems replace?",
+      "options": [
+        { "text": "Manual defect detection in manufacturing", "correct": true },
+        { "text": "Handwritten note checking", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-15",
+      "question": "Which futuristic area does CMTI contribute to?",
+      "options": [
+        { "text": "Industry 4.0", "correct": true },
+        { "text": "Folk Art Research", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-16",
+      "question": "CMTI develops sensors for monitoring?",
+      "options": [
+        { "text": "Tool wear and machine health", "correct": true },
+        { "text": "Airline ticket bookings", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-17",
+      "question": "Does CMTI provide turnkey R&D solutions?",
+      "options": [
+        { "text": "Yes", "correct": true },
+        { "text": "No", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-18",
+      "question": "Which initiative has CMTI actively contributed to?",
+      "options": [
+        { "text": "Make in India", "correct": true },
+        { "text": "Startup India TV Ads", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-19",
+      "question": "CMTI’s IoT-enabled sensors are useful for?",
+      "options": [
+        { "text": "Smart factories and predictive maintenance", "correct": true },
+        { "text": "Music streaming apps", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-20",
+      "question": "Which advanced manufacturing process is supported at CMTI?",
+      "options": [
+        { "text": "Additive Manufacturing (3D Printing)", "correct": true },
+        { "text": "Traditional Pottery", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-21",
+      "question": "CMTI’s R&D in nanotechnology focuses on?",
+      "options": [
+        { "text": "Advanced materials and coatings", "correct": true },
+        { "text": "Jewelry design", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-22",
+      "question": "CMTI often collaborates with?",
+      "options": [
+        { "text": "Academic institutions & industries", "correct": true },
+        { "text": "Movie directors", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-23",
+      "question": "Which measurement technology is a CMTI strength?",
+      "options": [
+        { "text": "Precision metrology", "correct": true },
+        { "text": "Voice recording", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-24",
+      "question": "CMTI’s skill development programs emphasize?",
+      "options": [
+        { "text": "Robotics, CNC machining & AI applications", "correct": true },
+        { "text": "Cooking classes", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-25",
+      "question": "CMTI’s AI-driven defect detection helps in?",
+      "options": [
+        { "text": "Reducing rejection rates in manufacturing", "correct": true },
+        { "text": "Finding typos in novels", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-26",
+      "question": "CMTI contributes to aerospace industry mainly through?",
+      "options": [
+        { "text": "Precision machining and component testing", "correct": true },
+        { "text": "Flight ticket booking systems", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-27",
+      "question": "Which smart factory concept is researched at CMTI?",
+      "options": [
+        { "text": "Digital twins and cyber-physical systems", "correct": true },
+        { "text": "Online shopping carts", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-28",
+      "question": "CMTI’s expertise in machine vision supports?",
+      "options": [
+        { "text": "Automated optical inspection", "correct": true },
+        { "text": "Virtual reality gaming", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-29",
+      "question": "Which area of AI is applied in CMTI’s smart manufacturing projects?",
+      "options": [
+        { "text": "Predictive analytics and anomaly detection", "correct": true },
+        { "text": "Chatbots for movies", "correct": false }
+      ]
+    },
+    {
+      "date": "2025-09-30",
+      "question": "CMTI’s smart sensors are designed to improve?",
+      "options": [
+        { "text": "Machine uptime and efficiency", "correct": true },
+        { "text": "Photo filters on mobile apps", "correct": false }
+      ]
+    }
+  ]
+}

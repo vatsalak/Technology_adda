@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Adda </title>
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <style>
+    
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: #ab2db7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #003354;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      background: #0078d7;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .quiz-question { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- <img src="drishti.png" alt="Drishti Logo"> -->
+    <h1> Technology Adda </h1>
+  </header>
+
+<body>
+
+  
+
+  <nav>
+    <a href="#knowledge">Knowledge Wall</a>
+    <a href="#news">Tech News</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#showcase">Showcase</a>
+    <a href="#meet">Meet Link</a>
+  </nav>
+
+  <!-- Knowledge Wall -->
+  <section id="knowledge">
+    <div class="card">
+      <h2>💡 Knowledge Wall (Daily Fact)</h2>
+      <div id="daily-fact">Loading fact...</div>
+    </div>
+  </section>
+
+  <!-- Tech News -->
+  <section id="news">
+    <div class="card">
+      <h2>📰 Latest Tech News</h2>
+      <ul id="tech-news"><li>Loading news...</li></ul>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz">
+  <div class="card">
+    <h2>🧩 CMTI Daily Quiz</h2>
+    <div class="quiz-question" id="quiz-content">
+      Loading quiz...
+    </div>
+  </div>
+</section>
+
+<script>
+  async function loadQuiz() {
+    const response = await fetch("cmti_quiz.json");
+    const data = await response.json();
+
+    const today = new Date().toISOString().split("T")[0];
+    const quiz = data.quizzes.find(q => q.date === today);
+
+    const container = document.getElementById("quiz-content");
+    if (!quiz) {
+      container.innerHTML = "<p>No quiz for today 🚀</p>";
+      return;
+    }
+
+    container.innerHTML = `
+      <p><b>Q:</b> ${quiz.question}</p>
+      ${quiz.options.map(opt => `
+        <button onclick="checkAnswer(${opt.correct})">${opt.text}</button>
+      `).join("")}
+    `;
+  }
+
+  function checkAnswer(isCorrect) {
+    if (isCorrect) {
+      alert("✅ Correct! 🎉");
+    } else {
+      alert("❌ Oops! Try again.");
+    }
+  }
+
+  loadQuiz();
+</script>
+
+
+  <!-- Showcase -->
+  <section id="showcase">
+    <div class="card">
+      <h2>🌟 Project Showcase</h2>
+      <ul>
+        <li><b>Smart Inspection System</b> – Automated defect detection with AI.</li>
+        <li><b>Robotics Arm</b> – High-precision assembly demo.</li>
+        <li><b>Vision-based Character Recognition</b> – Using OpenCV & PHP.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Google Meet -->
+  <section id="meet">
+  <div class="card">
+    <h2>🎤 Tech Adda Thursday</h2>
+    <p><b>Exclusive Live Session with Director, CMTI</b></p>
+    <p>💡 Insights on Innovation | ⚙️ Manufacturing Futures | 🚀 Industry 4.0</p>
+    <a href="https://meet.google.com/your-meet-link" target="_blank" class="btn">
+      👉 Join Live on Google Meet
+    </a>
+    <p><i>📅 Every Thursday | ⏰ 4:00 PM</i></p>
+  </div>
+</section>
+
+
+  <footer style="background:#003354; color:white; text-align:center; padding:10px;">
+    <p>© 2025 CMTI - Technology Adda</p>
+  </footer>
+
+  <!-- API Scripts -->
+  <script>
+    // Load random programming quote
+    async function loadFact() {
+    try {
+        const res = await fetch("facts.json");
+        const data = await res.json();
+        const today = new Date().getDate() % data.length; // Pick fact based on day
+        document.getElementById("daily-fact").innerHTML = data[today].fact;
+    } catch (e) {
+        document.getElementById("daily-fact").innerHTML = "⚠️ Could not load fact.";
+    }
+    }
+
+
+    // Load daily tech news
+    async function loadNews() {
+      try {
+        const res = await fetch("https://newsdata.io/api/1/latest?apikey=pub_890e5128b805425aa02a3d3ddbd77913&q=Technology");
+        const data = await res.json();
+        let newsList = data.results.slice(0, 5).map(a =>
+          `<li><a href="${a.link}" target="_blank">${a.title}</a></li>`
+        ).join('');
+        document.getElementById("tech-news").innerHTML = newsList;
+      } catch (e) {
+        document.getElementById("tech-news").innerHTML = "<li>⚠️ Could not load news.</li>";
+      }
+    }
+
+    loadFact();
+    loadNews();
+  </script>
+
+</body>
+</html>
